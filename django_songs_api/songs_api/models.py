@@ -4,5 +4,5 @@ from django.db import models
 class Song(models.Model):
     title = models.CharField(max_length=32)
     artist = models.CharField(max_length=32)
-    image = models.CharField(max_length=60)
-    listened_to = models.BooleanField(null = True)
+    image = models.CharField(max_length=600)
+    listened_to = models.BooleanField(default=True)
